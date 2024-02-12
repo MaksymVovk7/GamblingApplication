@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_new_all_screen"
+    tools:context=".GamesMenuActivity">
+
+    <ImageView
+        android:id="@+id/imageViewLabelLevel1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/imageViewLabelHotGames"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/level1_flag_menu" />
+
+    <ImageView
+        android:id="@+id/imageViewLabelHotGames"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageViewMainGame"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewLabelLevel1"
+        app:srcCompat="@drawable/flag_hot_games_menu" />
+
+    <ImageView
+        android:id="@+id/imageViewMainGame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@+id/imageViewLabelFlashGame"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewLabelHotGames"
+        app:srcCompat="@drawable/main_game_menu" />
+
+    <ImageView
+        android:id="@+id/imageViewLabelFlashGame"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageViewFlash1Game"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewMainGame"
+        app:srcCompat="@drawable/flag_flash_games_menu" />
+
+    <ImageView
+        android:id="@+id/imageViewFlash1Game"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageViewLabelSlotGames"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewFlash2Game"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewLabelFlashGame"
+        app:srcCompat="@drawable/flash1_not_registr_menu" />
+
+    <ImageView
+        android:id="@+id/imageViewFlash2Game"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewFlash1Game"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewFlash3Game"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageViewFlash1Game"
+        app:layout_constraintTop_toTopOf="@+id/imageViewFlash1Game"
+        app:srcCompat="@drawable/flash2_not_registr_menu" />
+
+    <ImageView
+        android:id="@+id/imageViewFlash3Game"
+        android:layout_width="wrap_content"
+        android:layout_height="140dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewFlash2Game"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageViewFlash2Game"
+        app:srcCompat="@drawable/flash3_not_registr_menu" />
+
+    <ImageView
+        android:id="@+id/imageViewLabelSlotGames"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageViewSlot1Game"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewFlash1Game"
+        app:srcCompat="@drawable/flag_slot_games_menu" />
+
+    <ImageView
+        android:id="@+id/imageViewSlot1Game"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewSlot2Game"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewLabelSlotGames"
+        app:srcCompat="@drawable/slot1_not_registr_menu" />
+
+    <ImageView
+        android:id="@+id/imageViewSlot2Game"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewSlot1Game"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewSlot3Game"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageViewSlot1Game"
+        app:layout_constraintTop_toTopOf="@+id/imageViewSlot1Game"
+        app:srcCompat="@drawable/slot2_not_registr_menu" />
+
+    <ImageView
+        android:id="@+id/imageViewSlot3Game"
+        android:layout_width="wrap_content"
+        android:layout_height="140dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewSlot2Game"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageViewSlot2Game"
+        app:srcCompat="@drawable/slot3_not_registr_menu" />
+</androidx.constraintlayout.widget.ConstraintLayout>

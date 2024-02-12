@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_game2"
+    tools:context=".SecondGameActivity">
+
+    <ImageView
+        android:id="@+id/imageViewBtnSpinGame2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewBtnMinusGame2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/imageViewBtnMinusGame2"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewBtnMinusGame2"
+        app:srcCompat="@drawable/btn_spin" />
+
+    <ImageView
+        android:id="@+id/imageViewSlotsGame2"
+        android:layout_width="350dp"
+        android:layout_height="220dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageView5"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewTotalWinGame2"
+        app:srcCompat="@drawable/slots_game2" />
+
+    <ImageView
+        android:id="@+id/imageViewTotalWinGame2"
+        android:layout_width="350dp"
+        android:layout_height="90dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@+id/imageViewSlotsGame2"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewSlotsGame2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/imageViewSlotsGame2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:srcCompat="@drawable/total_win_game2" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@+id/imageViewBtnMinusGame2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageViewSlotsGame2"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewBtnPlusGame2"
+        app:srcCompat="@drawable/bet_panel1" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+        app:layout_constraintEnd_toEndOf="@+id/imageView5"
+        app:layout_constraintStart_toStartOf="@+id/imageView5"
+        app:layout_constraintTop_toTopOf="@+id/imageView5"
+        app:srcCompat="@drawable/bet_panel2" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+        app:layout_constraintEnd_toEndOf="@+id/imageView6"
+        app:layout_constraintStart_toStartOf="@+id/imageView5"
+        app:layout_constraintTop_toTopOf="@+id/imageView5"
+        app:srcCompat="@drawable/bet_panel3" />
+
+    <ImageView
+        android:id="@+id/imageViewBtnMinusGame2"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageViewBtnSpinGame2"
+        app:layout_constraintEnd_toEndOf="@+id/imageView5"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/imageView5"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5"
+        app:srcCompat="@drawable/btn_minus" />
+
+    <ImageView
+        android:id="@+id/imageViewBtnPlusGame2"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView5"
+        app:layout_constraintEnd_toEndOf="@+id/imageView5"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/imageView5"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/btn_plus" />
+
+    <TextView
+        android:id="@+id/textViewBetGame2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/abril_fatface"
+        android:text="1000"
+        android:textColor="@color/white"
+        android:textSize="45sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+        app:layout_constraintEnd_toEndOf="@+id/imageView5"
+        app:layout_constraintStart_toStartOf="@+id/imageView5"
+        app:layout_constraintTop_toTopOf="@+id/imageView5" />
+
+    <TextView
+        android:id="@+id/textViewTotalGame2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/abril_fatface"
+        android:text="@string/text_total"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewNumTotalGame2"
+        app:layout_constraintEnd_toEndOf="@+id/textViewNumTotalGame2"
+        app:layout_constraintStart_toStartOf="@+id/textViewNumTotalGame2" />
+
+    <TextView
+        android:id="@+id/textViewWinGame2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/abril_fatface"
+        android:text="@string/text_win"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewNumWinGame2"
+        app:layout_constraintEnd_toEndOf="@+id/textViewNumWinGame2"
+        app:layout_constraintStart_toStartOf="@+id/textViewNumWinGame2" />
+
+    <TextView
+        android:id="@+id/textViewNumTotalGame2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="90dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/abril_fatface"
+        android:text="1000"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewTotalWinGame2"
+        app:layout_constraintStart_toStartOf="@+id/imageViewTotalWinGame2" />
+
+    <TextView
+        android:id="@+id/textViewNumWinGame2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="90dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/abril_fatface"
+        android:text="1000"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageViewSlotsGame2"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewTotalWinGame2" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/reels1Game2"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewSlotsGame2"
+        app:layout_constraintStart_toStartOf="@+id/imageViewSlotsGame2"
+        app:layout_constraintTop_toTopOf="@+id/imageViewSlotsGame2">
+
+        <com.megawild.roboo.ImageViewScrollingSecondGame
+            android:id="@+id/imageViewIcon1Game2"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/robo_icon2_game2" />
+
+        <com.megawild.roboo.ImageViewScrollingSecondGame
+            android:id="@+id/imageViewIcon2Game2"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewIcon1Game2"
+            app:srcCompat="@drawable/robo_icon1_game2" />
+
+        <com.megawild.roboo.ImageViewScrollingSecondGame
+            android:id="@+id/imageViewIcon3Game2"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewIcon2Game2"
+            app:srcCompat="@drawable/robo_icon3_game2" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/reels2Game2"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="44dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewSlotsGame2"
+        app:layout_constraintStart_toEndOf="@+id/reels1Game2"
+        app:layout_constraintTop_toTopOf="@+id/imageViewSlotsGame2">
+
+        <com.megawild.roboo.ImageViewScrollingSecondGame
+            android:id="@+id/imageViewIcon4Game2"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/robo_icon1_game2" />
+
+        <com.megawild.roboo.ImageViewScrollingSecondGame
+            android:id="@+id/imageViewIcon5Game2"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewIcon4Game2"
+            app:srcCompat="@drawable/robo_icon2_game2" />
+
+        <com.megawild.roboo.ImageViewScrollingSecondGame
+            android:id="@+id/imageViewIcon6Game2"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewIcon5Game2"
+            app:srcCompat="@drawable/robo_icon1_game2" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/reels3Game2"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="44dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewSlotsGame2"
+        app:layout_constraintStart_toEndOf="@+id/reels2Game2"
+        app:layout_constraintTop_toTopOf="@+id/imageViewSlotsGame2">
+
+        <com.megawild.roboo.ImageViewScrollingSecondGame
+            android:id="@+id/imageViewIcon7Game2"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/robo_icon3_game2" />
+
+        <com.megawild.roboo.ImageViewScrollingSecondGame
+            android:id="@+id/imageViewIcon8Game2"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewIcon7Game2"
+            app:srcCompat="@drawable/robo_icon4_game2" />
+
+        <com.megawild.roboo.ImageViewScrollingSecondGame
+            android:id="@+id/imageViewIcon9Game2"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewIcon8Game2"
+            app:srcCompat="@drawable/robo_icon5_game2" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

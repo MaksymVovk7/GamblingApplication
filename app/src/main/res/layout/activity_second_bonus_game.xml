@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_new_all_screen"
+    tools:context=".SecondBonusGameActivity">
+
+
+    <ImageView
+        android:id="@+id/imageViewBalanceBonus2Game"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@+id/imageViewSlot1Bonus2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:srcCompat="@drawable/total_win_game2" />
+
+    <TextView
+        android:id="@+id/textViewBalanceBonus2Game"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/abril_fatface"
+        android:text="@string/text_total"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewBalanceNumBonus2Game"
+        app:layout_constraintEnd_toEndOf="@+id/textViewBalanceNumBonus2Game"
+        app:layout_constraintStart_toStartOf="@+id/textViewBalanceNumBonus2Game" />
+
+    <TextView
+        android:id="@+id/textViewBalanceNumBonus2Game"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="90dp"
+        android:layout_marginBottom="26dp"
+        android:fontFamily="@font/abril_fatface"
+        android:text="1000"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewBalanceBonus2Game"
+        app:layout_constraintStart_toStartOf="@+id/imageViewBalanceBonus2Game" />
+
+    <TextView
+        android:id="@+id/textViewWinBonus2Game"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/abril_fatface"
+        android:text="@string/text_win"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewWinNumBonus2Game"
+        app:layout_constraintEnd_toEndOf="@+id/textViewWinNumBonus2Game"
+        app:layout_constraintStart_toStartOf="@+id/textViewWinNumBonus2Game" />
+
+    <TextView
+        android:id="@+id/textViewWinNumBonus2Game"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="90dp"
+        android:layout_marginBottom="26dp"
+        android:fontFamily="@font/abril_fatface"
+        android:text="1000"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewBalanceBonus2Game"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewBalanceBonus2Game" />
+
+    <ImageView
+        android:id="@+id/imageViewBtnSpinBonus2Game"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView14"
+        app:srcCompat="@drawable/btn_spin" />
+
+    <ImageView
+        android:id="@+id/imageViewBtnMinusBonus2Game"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView14"
+        app:layout_constraintEnd_toStartOf="@+id/imageView14"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView14"
+        app:srcCompat="@drawable/btn_minus" />
+
+    <ImageView
+        android:id="@+id/imageViewBtnPlusBonus2Game"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView14"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageView14"
+        app:layout_constraintTop_toTopOf="@+id/imageView14"
+        app:srcCompat="@drawable/btn_plus" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageViewBtnSpinBonus2Game"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewBtnPlusBonus2Game"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageViewBtnMinusBonus2Game"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewSlot7Bonus2"
+        app:srcCompat="@drawable/bet_panel1" />
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView14"
+        app:layout_constraintEnd_toEndOf="@+id/imageView14"
+        app:layout_constraintStart_toStartOf="@+id/imageView14"
+        app:layout_constraintTop_toTopOf="@+id/imageView14"
+        app:srcCompat="@drawable/bet_panel2" />
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView14"
+        app:layout_constraintEnd_toEndOf="@+id/imageView14"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imageView14"
+        app:layout_constraintTop_toTopOf="@+id/imageView14"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/bet_panel3" />
+
+    <ImageView
+        android:id="@+id/imageViewSlot1Bonus2"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageViewSlot4Bonus2"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewSlot2Bonus2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewBalanceBonus2Game"
+        app:srcCompat="@drawable/empty_slot_bonus2" />
+
+    <ImageView
+        android:id="@+id/imageViewSlot2Bonus2"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewSlot1Bonus2"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewSlot3Bonus2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageViewSlot1Bonus2"
+        app:layout_constraintTop_toTopOf="@+id/imageViewSlot1Bonus2"
+        app:srcCompat="@drawable/empty_slot_bonus2" />
+
+    <ImageView
+        android:id="@+id/imageViewSlot3Bonus2"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewSlot2Bonus2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageViewSlot2Bonus2"
+        app:layout_constraintTop_toTopOf="@+id/imageViewSlot2Bonus2"
+        app:srcCompat="@drawable/empty_slot_bonus2" />
+
+    <ImageView
+        android:id="@+id/imageViewSlot4Bonus2"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageViewSlot7Bonus2"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewSlot5Bonus2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewSlot1Bonus2"
+        app:srcCompat="@drawable/empty_slot_bonus2" />
+
+    <ImageView
+        android:id="@+id/imageViewSlot5Bonus2"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewSlot4Bonus2"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewSlot6Bonus2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageViewSlot4Bonus2"
+        app:layout_constraintTop_toTopOf="@+id/imageViewSlot4Bonus2"
+        app:srcCompat="@drawable/empty_slot_bonus2" />
+
+    <ImageView
+        android:id="@+id/imageViewSlot6Bonus2"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewSlot5Bonus2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageViewSlot5Bonus2"
+        app:layout_constraintTop_toTopOf="@+id/imageViewSlot5Bonus2"
+        app:srcCompat="@drawable/empty_slot_bonus2" />
+
+    <ImageView
+        android:id="@+id/imageViewSlot7Bonus2"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView14"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewSlot8Bonus2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewSlot4Bonus2"
+        app:srcCompat="@drawable/empty_slot_bonus2" />
+
+    <ImageView
+        android:id="@+id/imageViewSlot8Bonus2"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewSlot7Bonus2"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewSlot9Bonus2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageViewSlot7Bonus2"
+        app:layout_constraintTop_toTopOf="@+id/imageViewSlot7Bonus2"
+        app:srcCompat="@drawable/empty_slot_bonus2" />
+
+    <ImageView
+        android:id="@+id/imageViewSlot9Bonus2"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewSlot8Bonus2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageViewSlot8Bonus2"
+        app:layout_constraintTop_toTopOf="@+id/imageViewSlot8Bonus2"
+        app:srcCompat="@drawable/empty_slot_bonus2" />
+
+    <TextView
+        android:id="@+id/textViewBetBonus2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/abril_fatface"
+        android:text="1000"
+        android:textColor="@color/white"
+        android:textSize="45sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView14"
+        app:layout_constraintEnd_toEndOf="@+id/imageView14"
+        app:layout_constraintStart_toStartOf="@+id/imageView14"
+        app:layout_constraintTop_toTopOf="@+id/imageView14" />
+
+    <ImageView
+        android:id="@+id/imageViewIcon1Bonus2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewSlot1Bonus2"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewSlot1Bonus2"
+        app:layout_constraintStart_toStartOf="@+id/imageViewSlot1Bonus2"
+        app:layout_constraintTop_toTopOf="@+id/imageViewSlot1Bonus2"
+        app:srcCompat="@drawable/robo_icon_unknown_bonus2" />
+
+    <ImageView
+        android:id="@+id/imageViewIcon2Bonus2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewSlot2Bonus2"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewSlot2Bonus2"
+        app:layout_constraintStart_toStartOf="@+id/imageViewSlot2Bonus2"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewBalanceBonus2Game"
+        app:srcCompat="@drawable/robo_icon_unknown_bonus2" />
+
+    <ImageView
+        android:id="@+id/imageViewIcon3Bonus2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewSlot3Bonus2"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewSlot3Bonus2"
+        app:layout_constraintStart_toStartOf="@+id/imageViewSlot3Bonus2"
+        app:layout_constraintTop_toTopOf="@+id/imageViewSlot3Bonus2"
+        app:srcCompat="@drawable/robo_icon_unknown_bonus2" />
+
+    <ImageView
+        android:id="@+id/imageViewIcon4Bonus2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewSlot4Bonus2"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewSlot4Bonus2"
+        app:layout_constraintStart_toStartOf="@+id/imageViewSlot4Bonus2"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewSlot1Bonus2"
+        app:srcCompat="@drawable/robo_icon_unknown_bonus2" />
+
+    <ImageView
+        android:id="@+id/ImageViewIcon5Bonus2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewSlot5Bonus2"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewSlot5Bonus2"
+        app:layout_constraintStart_toStartOf="@+id/imageViewSlot5Bonus2"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewSlot2Bonus2"
+        app:srcCompat="@drawable/robo_icon_unknown_bonus2" />
+
+    <ImageView
+        android:id="@+id/imageViewIcon6Bonus2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewSlot6Bonus2"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewSlot6Bonus2"
+        app:layout_constraintStart_toStartOf="@+id/imageViewSlot6Bonus2"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewSlot3Bonus2"
+        app:srcCompat="@drawable/robo_icon_unknown_bonus2" />
+
+    <ImageView
+        android:id="@+id/imageViewIcon7Bonus2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewSlot7Bonus2"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewSlot7Bonus2"
+        app:layout_constraintStart_toStartOf="@+id/imageViewSlot7Bonus2"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewSlot4Bonus2"
+        app:srcCompat="@drawable/robo_icon_unknown_bonus2" />
+
+    <ImageView
+        android:id="@+id/imageViewIcon8Bonus2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewSlot8Bonus2"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewSlot8Bonus2"
+        app:layout_constraintStart_toStartOf="@+id/imageViewSlot8Bonus2"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewSlot5Bonus2"
+        app:srcCompat="@drawable/robo_icon_unknown_bonus2" />
+
+    <ImageView
+        android:id="@+id/imageViewIcon9Bonus2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewSlot9Bonus2"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewSlot9Bonus2"
+        app:layout_constraintStart_toEndOf="@+id/imageViewSlot8Bonus2"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewSlot6Bonus2"
+        app:srcCompat="@drawable/robo_icon_unknown_bonus2" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Robo Mega Wild</string>
+    <string name="btn_text_start">Play</string>
+    <string name="text_welcome">Welcome</string>
+    <string name="text_phone">Enter your phone</string>
+    <string name="text_anonymous_mode"><u>Anonymous mode</u></string>
+    <string name="btn_text_games">Games</string>
+    <string name="btn_text_settings">Settings</string>
+    <string name="btn_text_privacy">Privacy</string>
+    <string name="btn_text_exit">Exit</string>
+    <string name="btn_text_reset_score">Reset score</string>
+    <string name="btn_text_game_1">Game 1</string>
+    <string name="btn_text_game_2">Game 2</string>
+    <string name="btn_text_bonus_game">Bonus Game</string>
+    <string name="text_total">balance</string>
+    <string name="text_win">win</string>
+    <string name="hint_enter_name">Enter your name</string>
+</resources>
